@@ -10,6 +10,7 @@ const products = adminData.products;
 
 router.get('/',(req,res,next) => {
     res.render('shop',{
+        path: '/',
         prods: products, 
         active: 'shop', 
         pageTitle: 'Shop', 
